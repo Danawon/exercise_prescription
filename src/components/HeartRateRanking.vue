@@ -109,7 +109,7 @@ export default {
   created() {
     this.getBase();
     this.updateTime();
-    setInterval(this.updateTime, 60000);
+    setInterval(this.updateTime, 1000);
     this.initWebSocket(); // 获取上课人员心率数据
   },
   beforeUnmount() {
